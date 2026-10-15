@@ -19,5 +19,26 @@
     "imagen": "imagenes/falda-floral.jpg",
     "precio": "$ 50.000",
     "descripcion": "Hermosa falda con estampado floral. Agrega color y alegría en\n                  cualquier ocasión con esta Falda de diseño fresco y femenino"
+  },
+  {
+    "nombre": "Vestido en Satin",
+    "precio": "80.000",
+    "descripcion": "",
+    "id": "vestido-en-satin-1",
+    "imagen": "imagenes/vestido-en-satin-1-e98fd72e.jpg"
+  },
+  {
+    "nombre": "Cadena y Aretes de Cristal",
+    "precio": "75.000",
+    "descripcion": "",
+    "id": "cadena-y-aretes-de-cristal-1",
+    "imagen": "imagenes/cadena-y-aretes-de-cristal-1-78f95c69.jpg"
+  },
+  {
+    "nombre": "Bolso en Forma de Ostra",
+    "precio": "120.000",
+    "descripcion": "",
+    "id": "bolso-en-forma-de-ostra-1",
+    "imagen": "imagenes/bolso-en-forma-de-ostra-1-7312ab29.jpg"
   }
 ]
