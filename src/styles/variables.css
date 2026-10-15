@@ -1,9 +1,9 @@
 :root {
-  --color-fondo: #355C5D;
+  --color-fondo: #00674F;
   --color-fondo-secundario: #F4EFE6;
-  --color-primario: #355C5D;
+  --color-primario: #00674F;
   --color-titulos: #2d2a26;
-  --color-secundario: #D6A284;
+  --color-secundario: #f2d973 ;
   --color-parrafos: #1F1717;
   --fuente-moderna: system-ui, -apple-system, sans-serif;
   --fuente-elegante: 'Georgia', serif;
@@ -11,6 +11,9 @@
 }
 .centrar-items{
   align-items: center;
+}
+.texto-secundario{
+  color: var(--color-secundario);
 }
 .boton {
   padding: 18px 32px;
@@ -64,7 +67,3 @@ font-family: var(--fuente-elegante);
   color: var(--color-parrafos);
   background-color: var(--color-fondo-secundario);
 }
-
-/* =========================================================
-   ESTILOS DE SECCIÓN: SOBRE NOSOTROS & MAQUETACIÓN
-   ========================================================= */

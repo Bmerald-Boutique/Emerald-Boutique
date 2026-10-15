@@ -1,0 +1,23 @@
+[
+  {
+    "id": "bolso-tejido-1",
+    "nombre": "Bolso Tejido",
+    "imagen": "imagenes/bolso-tejido.jpg",
+    "precio": "$ 80,000",
+    "descripcion": "lindo bolso ligero, para todo tipo de ocasión, desde una\n                  salida casual hasta una cena elegante. Para que siempre luzcas\n                  al mejor estilo"
+  },
+  {
+    "id": "cadena-en-forma-de-girasol-2",
+    "nombre": "Cadena En Forma De Girasol",
+    "imagen": "imagenes/cadena-girasol.jpg",
+    "precio": "$ 150.000",
+    "descripcion": "Hermosa cadena en forma de girasol. Especial para cada salida,\n                  una joya laminada en oro"
+  },
+  {
+    "id": "falda-floral-3",
+    "nombre": "Falda Floral",
+    "imagen": "imagenes/falda-floral.jpg",
+    "precio": "$ 50.000",
+    "descripcion": "Hermosa falda con estampado floral. Agrega color y alegría en\n                  cualquier ocasión con esta Falda de diseño fresco y femenino"
+  }
+]

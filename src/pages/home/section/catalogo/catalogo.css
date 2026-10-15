@@ -1,24 +1,10 @@
-
-
 /* =========================================================
    ESTILOS DE SECCIÓN: CATÁLOGO (Con corrección de alineación)
    ========================================================= */
 #catalogo {
   padding: 5rem 1.5rem;
   box-sizing: border-box;
-  background-color: var(--fondo-principal, var(--color-principal, var(--color-primario, #355C5D)));
-  color: var(--color-blanco, #ffffff);
-}
 
-.fondo-principal,
-#catalogo.fondo-principal {
-  background-color: var(--fondo-principal, var(--color-principal, var(--color-primario, #355C5D)));
-  color: var(--color-blanco, #ffffff);
-}
-
-#catalogo.fondo-secundario {
-  background-color: var(--fondo-secundario, #F4EFE6);
-  color: #1f2937;
 }
 
 .catalogo-header {
@@ -50,8 +36,7 @@ section#catalogo .catalogo-header h2 {
   color: #f2d973 !important;
 }
 
-.catalogo-contenido,
-.cuadricula {
+.catalogo-contenido {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 2rem;

@@ -1,0 +1,99 @@
+/* Shared layout safeguards, loaded after page-specific styles. */
+html { scroll-padding-top: 90px; }
+body { min-width: 0; }
+img { max-width: 100%; }
+.cuadricula { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+.cuadricula > *, .fila-formulario > *, .cuadricula-contacto-2col > *, .detalle-showroom-grid > * { min-width: 0; }
+.contenedor-seccion { width: 100%; }
+a, button, input, textarea { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible { outline: 3px solid #f2d973; outline-offset: 5px; }
+.navbar-toggle { min-width: 44px; min-height: 44px; }
+.nav-link-btn { color: #173e30 !important; }
+.navbar-logo { font-size: clamp(1rem, 2.5vw, 1.25rem); }
+.navbar-menu { gap: clamp(16px, 2vw, 28px); }
+#catalogo { padding: clamp(48px, 6vw, 80px) clamp(20px, 5vw, 80px); }
+#catalogo .catalogo-header { margin-bottom: 36px; }
+#catalogo .catalogo-header h2 { font-size: clamp(28px, 3.4vw, 40px) !important; line-height: 1.2; }
+#catalogo .catalogo-contenido { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+#catalogo .catalogo-item { grid-column: auto; min-width: 0; }
+#catalogo .informacion-producto { flex-wrap: wrap; }
+#catalogo .producto-descripcion { text-align: left !important; }
+#catalogo .contenedor-seccion { padding: 0; }
+.card-header-row { flex-wrap: wrap; }
+.card-header-row > * { min-width: 0; }
+.card-titulo { overflow-wrap: anywhere; }
+.pagina-catalogo-cuerpo .pastilla-precio { color: #173e30 !important; }
+#contacto { padding: clamp(48px, 6vw, 80px) clamp(20px, 5vw, 80px); }
+.tarjeta-formulario-contacto { padding: clamp(20px, 4vw, 40px); }
+.campo-grupo input, .campo-grupo textarea { min-width: 0; font-size: 16px; }
+.campo-grupo textarea { resize: vertical; }
+.icono-info, .icono-whatsapp-grande, .icono-wa { flex-shrink: 0; }
+.contenido-info, .banner-whatsapp-info > div, .btn-wa-copy { min-width: 0; overflow-wrap: anywhere; }
+.banner-whatsapp { flex-wrap: wrap; padding: clamp(20px, 3vw, 32px); }
+.banner-whatsapp-info { min-width: 0; }
+.boton-enviar-contacto { color: #173e30; }
+.footer-links-inline { gap: 12px 24px; }
+.footer-link { padding-block: 8px; }
+.footer-desc, .footer-link, .footer-copyright { color: #d3e2da; }
+.pagina-detalle-cuerpo, .pagina-catalogo-cuerpo { --pagina-navbar-offset: 70px; }
+.detalle-showroom-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(20px, 3vw, 40px); padding: clamp(16px, 3vw, 36px); }
+.detalle-tarjeta-flotante-compra { padding: clamp(16px, 2.5vw, 32px); min-width: 0; }
+.detalle-producto-img { width: 100%; height: 100%; object-fit: contain; }
+.detalle-titulo-showroom, .detalle-precio-gigante { overflow-wrap: anywhere; }
+.miga-pan-lista { flex-wrap: wrap; max-width: 100%; border-radius: 16px !important; }
+.beneficios-lista li { align-items: flex-start; }
+.btn-whatsapp-showroom { padding: 16px; }
+@media (max-width: 1024px) {
+  #catalogo .catalogo-contenido { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 868px) { .detalle-showroom-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 840px) {
+  .contenedor-heroe, .sobre-seccion > .cuadricula { grid-template-columns: minmax(0, 1fr); }
+}
+@media (min-width: 841px) {
+  .contenedor-heroe { grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); }
+  .sobre-seccion > .cuadricula { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); }
+}
+@media (max-width: 768px) {
+  .navbar-menu { height: calc(100dvh - 70px); background: #00533f; visibility: hidden; pointer-events: none; transition: transform .3s ease, visibility .3s; }
+  .navbar-menu.active { visibility: visible; pointer-events: auto; }
+}
+@media (max-width: 640px) {
+  #catalogo .catalogo-contenido { grid-template-columns: minmax(0, 1fr); }
+  .fila-formulario { grid-template-columns: minmax(0, 1fr); }
+  .banner-whatsapp { flex-direction: column; align-items: stretch; }
+  .banner-whatsapp-info { align-items: flex-start; }
+  .banner-whatsapp-acciones, .boton-whatsapp { width: 100%; justify-content: center; }
+  .detalle-contenedor { padding-inline: 16px; }
+  .detalle-miga-pan .detalle-contenedor { padding-inline: 16px !important; }
+  .detalle-precio-gigante { font-size: clamp(26px, 8vw, 36px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+.heroe-imagen-contenedor { display: block; }
+.boton-whatsapp { color: #173e30; }
+.sobre-seccion.fondo-principal { background: var(--color-fondo); color: #fff; }
+.sobre-seccion .seccion-etiqueta, .sobre-nosotros-textos h2 em, .sobre-valores span, .sobre-enlace { color: var(--color-secundario); }
+.sobre-nosotros-textos h2 { color: #fff; }
+.sobre-nosotros-textos p { color: #e2eee7; }
+.sobre-valores { border-color: #ffffff30; }
+/* Keep the hero comfortably inside narrow windows and zoomed layouts. */
+#heroe .contenedor-heroe { width: 100%; max-width: 1280px; margin-inline: auto; }
+#heroe .contenedor-texto h1 { font-size: clamp(34px, 4.5vw, 64px); overflow-wrap: break-word; }
+#heroe .contenedor-boton { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; width: 100%; }
+#heroe .contenedor-boton .boton { width: 100%; padding: 16px 12px; letter-spacing: .07em; }
+#heroe .heroe-imagen-contenedor { width: 100%; min-width: 0; }
+@media (max-width: 1100px) {
+  #heroe { padding: 110px clamp(20px, 5vw, 48px) 48px; }
+  #heroe .contenedor-heroe { grid-template-columns: minmax(0, 1fr); gap: 32px; max-width: 720px; }
+  #heroe .contenedor-texto { max-width: none; }
+  #heroe .heroe-imagen-contenedor { max-width: none; border-radius: 80px 80px 12px 12px; }
+  #heroe .heroe-imagen { aspect-ratio: 4 / 3; max-height: 520px; border-radius: 68px 68px 6px 6px; }
+  #heroe .contenedor-texto h1 { font-size: clamp(34px, 6vw, 56px); }
+}
+@media (max-width: 480px) {
+  #heroe .contenedor-boton { grid-template-columns: minmax(0, 1fr); }
+  #heroe .heroe-imagen { aspect-ratio: 1 / 1; }
+}

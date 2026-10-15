@@ -1,45 +1,13 @@
-/* =========================================================
-   HOJA DE ESTILOS: contacto.css
-   Vinculada a variables.css del proyecto escolar
-   ========================================================= */
+@import "../../../../styles/variables.css";
 
-/* Variables de respaldo sincronizadas con la identidad del proyecto escolar */
-:root {
-  --fuente-moderna: 'Open Sans', system-ui, -apple-system, sans-serif;
-  --fuente-elegante: Georgia, serif;
-  --color-primario: #355C5D;
-  --color-principal: #355C5D;
-  --fondo-principal: #355C5D;
-  --color-secundario: #D6A284;
-  --fondo-secundario: #F4EFE6;
-  --color-blanco: #ffffff;
-  --color-negro: #111827;
-  --color-texto: #1f2937;
-}
-
-
-#contacto.fondo-principal,
-.seccion-contacto.fondo-principal {
-  background-color: var(--fondo-principal, var(--color-principal, var(--color-primario, #355C5D))) !important;
-  color: var(--color-blanco, #ffffff) !important;
-}
-
-
-#contacto.fondo-secundario,
-.seccion-contacto.fondo-secundario {
-  background-color: var(--fondo-principal, var(--color-principal, var(--color-primario, #355C5D))) !important;
-  color: var(--color-blanco, #ffffff) !important;
-}
 
 .seccion-contacto,
 #contacto {
   padding: 5rem 1.5rem;
   font-family: var(--fuente-moderna, system-ui, -apple-system, sans-serif);
   box-sizing: border-box;
-  background-color: var(--fondo-principal, var(--color-principal, var(--color-primario, #355C5D))) !important;
-  color: var(--color-blanco, #ffffff) !important;
+ 
 }
-
 
 /* Estilos adaptados al modo Oscuro / Institucional */
 #contacto .contacto-titulo,
@@ -97,7 +65,6 @@
 .seccion-contacto .tarjeta-info-item .etiqueta-info {
   color: rgba(255, 255, 255, 0.72) !important;
 }
-
 
 .seccion-contacto *,
 .seccion-contacto *::before,

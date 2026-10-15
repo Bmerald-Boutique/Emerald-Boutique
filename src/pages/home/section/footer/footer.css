@@ -1,9 +1,11 @@
+@import "../../../../styles/variables.css";
 /* =========================================================
    ESTILOS DEL PIE DE PÁGINA (FOOTER)
    ========================================================= */
 
+
 .sitio-footer {
-  background-color: var(--color-principal, #355C5D);
+  background-color: var(--color-fondo);
   color: #f8fafc;
   padding: 4rem 1.5rem 2rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;

@@ -1,0 +1,33 @@
+.seccion-heroe {
+  min-height: auto;
+  width: 100%;
+  padding: 126px clamp(20px, 5vw, 80px) 64px;
+  background: var(--color-fondo);
+}
+.contenedor-heroe { grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr); gap: clamp(32px, 5vw, 80px); align-items: center; }
+.contenedor-heroe > .col-span-5, .contenedor-heroe > .col-span-7 { grid-column: auto; }
+.contenedor-texto { display: flex; flex-direction: column; min-width: 0; width: 100%; gap: 24px; }
+.seccion-etiqueta { display: block; color: var(--color-secundario); font-size: 12px; font-weight: 650; letter-spacing: .18em; text-transform: uppercase; line-height: 1.6; }
+.contenedor-texto h1 { font-family: Georgia, serif; font-size: clamp(40px, 4.7vw, 70px); font-weight: 400; letter-spacing: -.045em; line-height: 1.08; overflow-wrap: normal; word-break: normal; text-wrap: balance; }
+.contenedor-texto h1 span { display: block; font-style: italic; }
+.contenedor-texto p { max-width: 470px; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.8; color: #e2eee7; }
+.contenedor-boton { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.contenedor-boton .boton { flex: 0 1 auto; padding: 17px 23px; font-size: 11px; letter-spacing: .1em; border-radius: 4px; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; }
+.contenedor-boton .boton-secundario { color: #173e30; }
+.contenedor-boton .boton:hover { transform: translateY(-2px); }
+.heroe-imagen-contenedor { padding: 12px; border: 1px solid #ffffff30; border-radius: 160px 160px 12px 12px; }
+.heroe-imagen { width: 100%; height: auto; aspect-ratio: 5 / 6; max-height: 650px; border-radius: 148px 148px 6px 6px; object-fit: cover; display: block; }
+@media (max-width: 840px) {
+  .seccion-heroe { min-height: auto; padding-top: 110px; padding-bottom: 48px; }
+  .contenedor-heroe { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .contenedor-texto { max-width: 640px; }
+  .heroe-imagen-contenedor { width: 100%; max-width: 640px; margin-inline: auto; border-radius: 100px 100px 12px 12px; }
+  .heroe-imagen { aspect-ratio: 4 / 3; border-radius: 88px 88px 6px 6px; }
+}
+@media (max-width: 480px) {
+  .contenedor-texto { gap: 20px; }
+  .contenedor-texto h1 { font-size: clamp(36px, 10vw, 48px); }
+  .contenedor-boton { flex-direction: column; }
+  .contenedor-boton .boton { width: 100%; }
+  .heroe-imagen { aspect-ratio: 1 / 1; }
+}
